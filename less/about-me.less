@@ -1,0 +1,67 @@
+.about-me {
+    /*height: 400px;*/
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: @primaryTextColor;
+    background-color: @primaryBgColor;
+
+    @media (max-width: @tabletBreakPoint) {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 6rem;
+        font-size: 60px;
+        font-weight: normal;
+        margin: 0.60em 0;
+
+        @media (max-width: @tabletBreakPoint) {
+            font-size: 4rem;
+            font-size: 40px;
+            font-weight: normal;
+            margin: 0.30em 0;
+        }
+    }
+
+    .about-me-left {
+        text-align: center;
+
+        img {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            border-radius: 100%;
+            border: 3px solid @primaryTextColor;
+            transition: border .5s, transform .5s ease-out;
+
+            &:hover {
+                border: 5px solid @primaryTextColor;
+                transform: scale(1.10);
+                transition: border .5s, transform .5s ease-out;
+            }
+
+            @media (max-width: @tabletBreakPoint) {
+                width: 150px;
+                height: 150px;
+                margin: 10px;
+            }
+        }
+    }
+
+    .about-me-intro {
+        /*flex: 1;*/
+    }
+
+    .about-me-intro-sub {
+        font-size: 4rem;
+        font-size: 40px;
+
+        @media (max-width: @tabletBreakPoint) {
+            font-size: 2rem;
+            font-size: 20px;
+        }
+    }
+}

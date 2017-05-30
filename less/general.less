@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+    font-size: 15em;
+    font-size: 15px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.4rem;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+
+    color: @textColor;
+}
+
+a {
+    color: @textColor;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+    // text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.main-section {
+    & > .section-inner {
+        padding: 30px;
+        margin: auto;
+        max-width: 900px;
+    }
+}

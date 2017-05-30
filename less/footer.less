@@ -1,0 +1,44 @@
+.footer {
+    background-color: @footerBgColor;
+    color: @footerLinkColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: @tabletBreakPoint) {
+        display: block;
+        text-align: center;
+
+        .footer-main-links {
+            padding: 20px 10px;
+        }
+    }
+
+    a {
+        color: @footerLinkColor;
+        text-decoration: none;
+    }
+
+    .footer-main-links, .footer-social {
+        padding: 10px;
+    }
+
+    .footer-social {
+        svg, a {
+            display: inline-block;
+        }
+
+        svg {
+            height: 100%;
+            width: 100%;
+            color: @footerLinkColor;
+            fill: @footerLinkColor;
+        }
+
+        a {
+            height: 3rem;
+            width: 3rem;
+            margin-right: 10px;
+        }
+    }
+}

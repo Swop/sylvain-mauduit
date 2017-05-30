@@ -1,0 +1,45 @@
+.main-nav {
+    background-color: @primaryBgColor;
+    a {
+        color: @navLinkColor;
+        text-decoration: none;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    ul {
+        list-style-type: none;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+
+        li {
+            border-top: 3px solid @primaryBgColor;
+            background-color: lighten(@primaryBgColor, 5%);
+            transition: all .5s ease-out;
+
+            &:hover {
+                background-color: lighten(@primaryBgColor, 10%);
+                border-top: 3px solid @primaryTextColor;
+                transition: all .5s ease-out;
+            }
+
+            flex-grow: 1;
+
+            a {
+                padding: 20px;
+                display: block;
+                text-align: center;
+
+                @media (max-width: @tabletBreakPoint) {
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}

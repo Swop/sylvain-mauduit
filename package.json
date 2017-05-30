@@ -1,0 +1,26 @@
+{
+  "name": "sylvain-mauduit",
+  "version": "1337.1.0",
+  "license": "MIT",
+  "description": "Sylvain Mauduit (@Swop) personal page",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Swop/sylvain-mauduit.git"
+  },
+  "scripts": {
+    "build": "rm -rf web/assets && webpack",
+    "server": "rm -rf web/assets && ./node_modules/.bin/webpack-dev-server --open --hot --progress --inline --content-base web"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "css-loader": "^0.28.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.3",
+    "normalize.css": "^7.0.0",
+    "style-loader": "^0.18.1",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
